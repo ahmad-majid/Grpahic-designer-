@@ -22,7 +22,7 @@ const HeroSection = () => {
     <section className="hero">
       <img src={heroimg} alt="Hero Background" className="hero-img" />
       <div className="hero-content">
-  <h1 className="hero-heading">HAMID MLIK</h1>
+  <h1 className="hero-heading">HAMID MALIK</h1>
 <h2 className="hero-subtitle">Designing Creativity with Purpose</h2>
 <p className="hero-paragraph">
  I turn ideas into visuals that inspire. From logos and branding to digital graphics and 
