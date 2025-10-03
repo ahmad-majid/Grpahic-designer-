@@ -1,0 +1,11 @@
+/* src/styles/Loader.css */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height based on your design */
+    font-size: 1.5rem;
+    color: #333; /* Customize color */
+    /* Add any additional styles, like animations or background */
+  }
+  

@@ -1,0 +1,164 @@
+
+.capturing-moments-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .capturing-moments-left, .capturing-moments-right {
+    flex: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .capturing-moments-left.visible, .capturing-moments-right.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .capturing-moments-left {
+    padding-right: 20px;
+  }
+  
+  .capturing-moments-right {
+    text-align: right;
+  }
+  
+  .capturing-moments-text {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: green;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: black !important;
+   
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-family: 'Lora', serif;
+  }
+  
+  .contact-link {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: green;
+    border: 2px solid green;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .contact-link:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  .capturing-moments-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  /* Media Queries */
+
+/* For tablets and smaller screens (between 768px and 1024px) */
+@media (max-width: 1024px) {
+  .capturing-moments-section {
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .capturing-moments-left, .capturing-moments-right {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .capturing-moments-right {
+    text-align: center;
+  }
+
+  .capturing-moments-left {
+    padding-right: 0;
+  }
+}
+
+/* For mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  .capturing-moments-section {
+    padding: 20px;
+  }
+
+  .capturing-moments-left, .capturing-moments-right {
+    flex: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .capturing-moments-left {
+    padding: 0;
+  }
+
+  .capturing-moments-text {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .contact-link {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .capturing-moments-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* For very small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .capturing-moments-section {
+    padding: 15px;
+  }
+
+  .capturing-moments-text {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .contact-link {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}

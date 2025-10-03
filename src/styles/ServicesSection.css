@@ -1,0 +1,206 @@
+/* Existing styles... */
+
+.services-section {
+  padding: 50px;
+  background-color: #595959;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services-intro {
+  color: lightgreen;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-heading {
+  color: white !important;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.service-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.service-card-title:hover {
+  color: green;
+}
+
+.service-card-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.read-more-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #6ab04c, #2e8b57);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
+  margin-top: 10px;
+}
+
+.read-more-button:hover {
+  background: linear-gradient(45deg, #2e8b57, #6ab04c);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.read-more-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Styles */
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 20px;
+  }
+
+  .service-card {
+    width: 100%; /* Full width on mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+  }
+  .service-detail-item {
+    display: flex;
+    align-items: center !important;
+    gap: 20px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .service-detail-image {
+  margin-bottom: 1rem !important;
+
+  }
+  .service-detail-image img {
+    max-height: 400px !important;
+}
+
+  .service-card-image {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Adjust height automatically */
+    background-size: contain; /* Ensure image scales */
+    background-position: center;
+  }
+
+  .service-card-image img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    display: block;
+  }
+
+  .service-card-content {
+    padding: 15px;
+  }
+
+  .service-card-title {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Specific styles for devices up to 480px */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Smaller heading size */
+  }
+
+  .service-card {
+    width: 100%; /* Keep cards full width */
+    margin-bottom: 15px; /* Add some spacing between cards */
+  }
+
+  .service-card-title {
+    font-size: 1.1rem; /* Slightly smaller title size */
+  }
+  .service-detail-image img {
+    max-height: 400px !important;
+}
+
+  .service-card-description {
+    font-size: 0.9rem; /* Smaller description size */
+  }
+
+  .read-more-button {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 0.9rem; /* Smaller button font */
+  }
+}

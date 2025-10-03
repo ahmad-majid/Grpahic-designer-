@@ -1,0 +1,157 @@
+.pricing-section {
+    padding: 2rem;
+    background-color: #f9fafb;
+}
+
+.pricing-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pricing-intro h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-intro p {
+    font-size: 1.125rem;
+    color: #555;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    max-width: 30%;
+    text-align: center;
+    margin: 0.5rem;
+    box-sizing: border-box;
+}
+
+.pricing-title {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #0f8622;
+    margin-bottom: 1rem;
+}
+
+.pricing-description {
+    font-size: 1rem;
+    color: #555;
+    text-align: left; /* Ensures text aligns nicely */
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.pricing-description ul {
+    list-style: none; /* Removes default bullets */
+    padding-left: 0;
+    margin: 0;
+}
+
+.pricing-description li {
+    position: relative;
+    padding-left: 2rem; /* Space for custom bullets */
+    margin-bottom: 1rem; /* Gap between items */
+    font-size: 1rem;
+    color: #333;
+}
+
+.pricing-description li::before {
+    content: '\2022'; /* Unicode for bullet point */
+    color: #4CAF50; /* Green bullet */
+    font-size: 1.5rem; /* Size of the bullet */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.pricing-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1a202c;
+    margin-top: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing-card {
+        max-width: 80%;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .pricing-title {
+        font-size: 1.25rem;
+    }
+
+    .pricing-description {
+        font-size: 0.9rem;
+    }
+
+    .pricing-price {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-intro h2 {
+        font-size: 1.75rem;
+    }
+
+    .pricing-intro p {
+        font-size: 1rem;
+    }
+
+    .pricing-card {
+        padding: 1.5rem;
+    }
+
+    .pricing-description li {
+        font-size: 0.9rem;
+    }
+
+    .pricing-price {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .pricing-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .pricing-intro p {
+        font-size: 0.875rem;
+    }
+
+    .pricing-card {
+        padding: 1rem;
+    }
+
+    .pricing-description li {
+        font-size: 0.875rem;
+    }
+
+    .pricing-price {
+        font-size: 0.875rem;
+    }
+}
